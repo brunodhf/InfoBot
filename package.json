@@ -1,0 +1,11 @@
+{
+    "name": "JAS-bot",
+    "version": "1.0.0",
+    "description": "A discord support bot",
+    "main": "bot.js",
+    "author": "Broundonb",
+    "dependencies": {
+        "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+        "winston": "^3.3.3"
+    }
+}
