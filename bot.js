@@ -12,9 +12,11 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+bot.setPresence( { "idle_since":null,"game":{"name":"Minecraft"}} );
+;
 bot.on('ready', function (evt) {
     logger.info('Connected');
-    logger.info('Logged in as: Bot1');
+    logger.info('Logged in');
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
