@@ -10,7 +10,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
-bot.setPresence( { "idle_since":null,"game":{"name":"Minecraft"}} );
+bot.setPresence( { "idle_since":null,"game":{"name":"Support"}} );
 ;
 bot.on('ready', function (evt) {
     logger.info('Connected');
@@ -24,56 +24,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            case 'map':
+            case 'inc':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'http://map.justanearthserver.net/'
-                });
-                break;
-            case 'store':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'http://shop.justanearthserver.net/'
-                });
-                break;
-            case 'ip':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '**JAVA:** justanearthserver.net **BEDROCK:** IP: 157.90.221.184 Port: 4344'
-                });
-                break;
-            case 'discord':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'https://discord.gg/qha8hS8'
-                });
-                break;
-            case 'help':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Under development...'
-                });
-                break;
-            case 'rules':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'http://bit.ly/3qdCHmh'
-                });
-                break;
-            case 'new':
-                // Creates a channel called #ticket-[number] with -new https://discord.com/developers/docs/resources/guild#create-guild-channel
-                // only staff members & ticket creator can see channel (& send messages) https://discord.com/developers/docs/resources/channel#edit-channel-permissions
-                // ticket bot pings a random staff member on the bot "Support message"
-                // channel position https://discord.com/developers/docs/resources/channel#modify-channel
-                // close ticket https://discord.com/developers/docs/resources/channel#deleteclose-channel
-                // -close to close ticket
-                var server = message.guild;
-                var name = "ticket-[]";
-            
-                server.createChannel(name, "text");
-                bot.sendMessage({
-                    to: channelID,
-                    message: ''
+                    message: 'This ticket will be deleted due to user inactivity'
                 });
             break;
          }
