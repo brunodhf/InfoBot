@@ -1,1 +1,1 @@
-ready to publish
+old supportbot (cleaned up the bot info)
