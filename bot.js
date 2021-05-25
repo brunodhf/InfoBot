@@ -10,7 +10,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
-bot.setPresence( { "idle_since":null,"game":{"name":"Support"}} );
+bot.setPresence( { "idle_since":null,"game":{"name":"jes.earth"}} );
 ;
 bot.on('ready', function (evt) {
     logger.info('Connected');
@@ -24,10 +24,24 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            case 'inc':
+            case '[Message]':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'This ticket will be deleted due to user inactivity'
+                    message: '[Message]'
+                });
+            break;
+
+            case '[Message]':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '[Message]'
+                });
+            break;
+
+            case '[Message]':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '[Message]'
                 });
             break;
          }
