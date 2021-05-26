@@ -1,1 +1,1 @@
-old supportbot (cleaned up the bot info)
+Old backup support bot for ip and info
