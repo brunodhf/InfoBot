@@ -24,21 +24,21 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            case '[Message]':
+            case 'ip':
                 bot.sendMessage({
                     to: channelID,
                     message: '[Message]'
                 });
             break;
 
-            case '[Message]':
+            case 'store':
                 bot.sendMessage({
                     to: channelID,
                     message: '[Message]'
                 });
             break;
 
-            case '[Message]':
+            case 'map':
                 bot.sendMessage({
                     to: channelID,
                     message: '[Message]'
