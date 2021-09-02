@@ -11,30 +11,4 @@ Latest version ```npm install izy521/discord.io```
 https://nodejs.org/en/download/
 
 ### Commands
-In this code [example](https://github.com/Broundonb/OldSupportBot/blob/main/bot.js) there are lines of code which can be duplicated or modified customly
-
-```
-            case 'ip':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[ip link]'
-                });
-            break;
-
-            case 'store':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[store link]'
-                });
-            break;
-
-            case 'map':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[map link]'
-                });
-            break;
-         }
-     }
-});
-```
+```!ip``` Will trigger the
