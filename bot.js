@@ -27,21 +27,21 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'ip':
                 bot.sendMessage({
                     to: channelID,
-                    message: '[Message]'
+                    message: '[ip link]'
                 });
             break;
 
             case 'store':
                 bot.sendMessage({
                     to: channelID,
-                    message: '[Message]'
+                    message: '[store link]'
                 });
             break;
 
             case 'map':
                 bot.sendMessage({
                     to: channelID,
-                    message: '[Message]'
+                    message: '[map link]'
                 });
             break;
          }
