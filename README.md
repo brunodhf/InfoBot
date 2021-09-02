@@ -11,4 +11,24 @@ Latest version ```npm install izy521/discord.io```
 https://nodejs.org/en/download/
 
 ### Commands
-```!ip``` Will trigger the
+```!ip``` will trigger
+```
+            case 'ip':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '[map link]'                    
+```
+```!store``` will trigger
+```
+            case 'store':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '[map link]'                    
+```
+```!map``` will trigger
+```
+            case 'map':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '[map link]'                    
+```
