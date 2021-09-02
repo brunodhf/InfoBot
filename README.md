@@ -11,7 +11,7 @@ Latest version ```npm install izy521/discord.io```
 https://nodejs.org/en/download/
 
 ### Commands
-In this code [example](https://github.com/Broundonb/OldSupportBot/blob/main/bot.js) you will note that the part shown below, there are lines of code which can be duplicated or modified repeatedly such as:
+In this code [example](https://github.com/Broundonb/OldSupportBot/blob/main/bot.js) there are lines of code which can be duplicated or modified customly
 
 ```
             case 'ip':
