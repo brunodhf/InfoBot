@@ -10,7 +10,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
-bot.setPresence( { "idle_since":null,"game":{"name":"jes.earth"}} );
+bot.setPresence( { "idle_since":null,"game":{"name":"ANY NAME"}} );
 ;
 bot.on('ready', function (evt) {
     logger.info('Connected');
@@ -24,24 +24,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            case 'ip':
+            case 'COMMAND':
                 bot.sendMessage({
                     to: channelID,
-                    message: '[ip link]'
-                });
-            break;
-
-            case 'store':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[store link]'
-                });
-            break;
-
-            case 'map':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[map link]'
+                    message: '[link]'
                 });
             break;
          }
