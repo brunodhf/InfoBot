@@ -1,9 +1,9 @@
 {
-    "name": "Sbot1",
+    "name": "abot1",
     "version": "1.0.0",
-    "description": "A discord support bot",
+    "description": "A discord bot that sends specific messages if certain commands are typed",
     "main": "bot.js",
-    "author": "-",
+    "author": "",
     "dependencies": {
         "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
         "winston": "^3.3.3"
