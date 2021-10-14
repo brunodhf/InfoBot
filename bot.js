@@ -10,6 +10,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+//"playing a game": game name = "ANY NAME"
 bot.setPresence( { "idle_since":null,"game":{"name":"ANY NAME"}} );
 ;
 bot.on('ready', function (evt) {
