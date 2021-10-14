@@ -9,26 +9,3 @@ Latest version ```npm install izy521/discord.io```
 
 ### Node.js Installation
 https://nodejs.org/en/download/
-
-### Commands
-```!ip``` will trigger
-```
-            case 'ip':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[map link]'                    
-```
-```!store``` will trigger
-```
-            case 'store':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[map link]'                    
-```
-```!map``` will trigger
-```
-            case 'map':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '[map link]'                    
-```
